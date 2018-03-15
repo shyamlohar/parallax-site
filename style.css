@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    background-color: #211023;
+}
+
+.headj{
+    position: absolute;
+    top: 20%;
+    color: tomato;
+    z-index: 20;
+}
+
+.navbar{
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #301025;
+    z-index: 165;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+logo{
+    height: 100%;
+    display: block;
+    /* width: 100%; */
+    text-align: center;
+  
+}
+
+.logo a{
+    display: block;
+    color: #F99533;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;  
+    margin-left: 20px; 
+    height: 100%;
+    width: 100%;
+    transition: 0.4s ease-in-out;
+}
+
+.logo a:hover{
+    background-color: #F99533;
+    color: #211023;
+}
+
+.links {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.links a{
+    /* display: block; */
+    color: #F99533;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin-right: 15px;
+    transition: 0.4s ease-in-out; 
+}
+
+.links a:hover{
+    background-color: #F99533;
+    color: #211023;
+}
+
+.parallax{
+    position: relative;
+    height: 1000px;
+    z-index: 10;
+    vertical-align: top;
+}
+
+.layers{
+    position: fixed;
+    background-position: bottom center;
+    background-size: auto 1038px;
+    background-repeat: repeat-x;
+    width: 100%;
+    height: 1000px;
+}
+
+#layer1{
+    background-image: url(Layer0.png);
+}
+
+#layer2{
+    background-image: url(Layer1.png);
+}
+
+#layer3{
+    background-image: url(Layer2.png);
+}
+
+#layer4{
+    background-image: url(Layer3.png);
+}
+
+#layer5{
+    background-image: url(Layer4.png);
+}
+
+#layer6{
+    background-image: url(Layer5.png);
+}
+
+#layer7{
+    background-image: url(Layer6.png);
+}
+
+.pfcont{
+    width: 100%;    
+    background-color: #211023;
+    position: relative;
+    z-index: 15;
+    /* height: 3000px; */
+}
+
+.para{
+    padding: 90px 10px;
+    box-sizing: border-box;
+    color: #F99533;
+    text-align: center;
+    font-size: x-large;
+}
+
+.profile{
+    position: relative;
+    margin: 10px auto;
+    z-index: 110;
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    vertical-align: top;
+    text-align: center;
+    background-image: url(pfp.jpeg);
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+.bio{
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #F99533;
+    overflow: hidden;
+}
+
+.bio h3{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transform: translateY(-120%);
+    transition: 0.8s;
+}
+
+.workHead{
+    text-align: center;
+    color: #F99533;
+    text-transform: uppercase;
+    margin: 20px auto;
+}
+
+.works{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* height: 130px; */
+    width: 100%;
+    /* background-color: aqua; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 0 20%;
+    overflow: hidden;
+}
+
+.works a{
+    flex-grow: 1;
+    text-decoration: none;
+    color: white;
+    display: block;
+    height: 100%;
+    min-height: 90px;
+    margin-left: 20px;
+    margin-top: 20px;
+    background-color: #F99533;
+    text-align: center;
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.works a span{
+    color: #211023;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.contact{
+    margin-top: 10px;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact h2{
+    color: #F99533;
+}
+.social img{
+    margin-top: 20px;
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+
+}
+
+
+@media screen and (max-width: 425px){
+    .bio 
+    {
+        width: 80%
+    }
+}
